@@ -4,7 +4,11 @@ Labbb1_autogen/timestamp: \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/.qtc/package-manager/maintenance_tool_provider.cmake \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeCXXCompiler.cmake \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/CMakeFiles/3.30.5/CMakeSystem.cmake \
+	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/car.cpp \
+	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/car.h \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/main.cpp \
+	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/truck.cpp \
+	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/truck.h \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/vehicle.cpp \
 	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/vehicle.h \
 	/Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/cmake/Qt6/FindWrapAtomic.cmake \

@@ -6,8 +6,7 @@
 class Vehicle {
 protected:
     std::string name_;
-    short fuelLevel_;
-
+    short fuelLevel_; // [0,100]
     void normalizeFuelLevel();
 
 public:
@@ -20,6 +19,7 @@ public:
     virtual void refuel(short amount) = 0;
     virtual std::string status() const = 0;
 
+    // default: burn 5 per hour (no prints)
     virtual void simulateHour();
 };
 

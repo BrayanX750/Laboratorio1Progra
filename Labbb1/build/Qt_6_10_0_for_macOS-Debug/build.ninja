@@ -73,6 +73,22 @@ build CMakeFiles/Labbb1.dir/vehicle.cpp.o: CXX_COMPILER__Labbb1_unscanned_Debug 
   OBJECT_DIR = CMakeFiles/Labbb1.dir
   OBJECT_FILE_DIR = CMakeFiles/Labbb1.dir
 
+build CMakeFiles/Labbb1.dir/car.cpp.o: CXX_COMPILER__Labbb1_unscanned_Debug /Users/brayanpinel/Documents/Laboratorio1/Labbb1/car.cpp || cmake_object_order_depends_target_Labbb1
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/Labbb1.dir/car.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/include -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/QtCore.framework/Headers -iframework /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/mkspecs/macx-clang -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/include
+  OBJECT_DIR = CMakeFiles/Labbb1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Labbb1.dir
+
+build CMakeFiles/Labbb1.dir/truck.cpp.o: CXX_COMPILER__Labbb1_unscanned_Debug /Users/brayanpinel/Documents/Laboratorio1/Labbb1/truck.cpp || cmake_object_order_depends_target_Labbb1
+  DEFINES = -DQT_CORE_LIB
+  DEP_FILE = CMakeFiles/Labbb1.dir/truck.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/include -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/QtCore.framework/Headers -iframework /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/mkspecs/macx-clang -isystem /Users/brayanpinel/Downloads/QTT/6.10.0/macos/include
+  OBJECT_DIR = CMakeFiles/Labbb1.dir
+  OBJECT_FILE_DIR = CMakeFiles/Labbb1.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Labbb1
@@ -81,7 +97,7 @@ build CMakeFiles/Labbb1.dir/vehicle.cpp.o: CXX_COMPILER__Labbb1_unscanned_Debug 
 #############################################
 # Link the executable Labbb1
 
-build Labbb1: CXX_EXECUTABLE_LINKER__Labbb1_Debug CMakeFiles/Labbb1.dir/Labbb1_autogen/mocs_compilation.cpp.o CMakeFiles/Labbb1.dir/main.cpp.o CMakeFiles/Labbb1.dir/vehicle.cpp.o | /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/QtCore.framework/Versions/A/QtCore || Labbb1_autogen Labbb1_autogen_timestamp_deps
+build Labbb1: CXX_EXECUTABLE_LINKER__Labbb1_Debug CMakeFiles/Labbb1.dir/Labbb1_autogen/mocs_compilation.cpp.o CMakeFiles/Labbb1.dir/main.cpp.o CMakeFiles/Labbb1.dir/vehicle.cpp.o CMakeFiles/Labbb1.dir/car.cpp.o CMakeFiles/Labbb1.dir/truck.cpp.o | /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/QtCore.framework/Versions/A/QtCore || Labbb1_autogen Labbb1_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib  /Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -framework UniformTypeIdentifiers
   LINK_PATH = -F/Users/brayanpinel/Downloads/QTT/6.10.0/macos/lib

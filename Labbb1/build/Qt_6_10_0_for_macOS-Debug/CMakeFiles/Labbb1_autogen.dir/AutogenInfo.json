@@ -198,6 +198,18 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/car.h",
+			"MU",
+			"EWIEGA46WW/moc_car.cpp",
+			null
+		],
+		[
+			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/truck.h",
+			"MU",
+			"EWIEGA46WW/moc_truck.cpp",
+			null
+		],
+		[
 			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/vehicle.h",
 			"MU",
 			"EWIEGA46WW/moc_vehicle.cpp",
@@ -260,7 +272,17 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/car.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/main.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/brayanpinel/Documents/Laboratorio1/Labbb1/truck.cpp",
 			"MU",
 			null
 		],

@@ -15,6 +15,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 add_executable(Labbb1
   main.cpp
   vehicle.h vehicle.cpp
+  car.h car.cpp
+  truck.h truck.cpp
 )
 target_link_libraries(Labbb1 Qt${QT_VERSION_MAJOR}::Core)
 
