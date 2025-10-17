@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_Labbb1_FILE /Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1)
+set(__QT_DEPLOY_TARGET_Labbb1_TYPE EXECUTABLE)
