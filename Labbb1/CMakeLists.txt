@@ -17,6 +17,9 @@ add_executable(Labbb1
   vehicle.h vehicle.cpp
   car.h car.cpp
   truck.h truck.cpp
+  drone.h drone.cpp
+  IFlyable.h
+  motorcycle.h motorcycle.cpp
 )
 target_link_libraries(Labbb1 Qt${QT_VERSION_MAJOR}::Core)
 
