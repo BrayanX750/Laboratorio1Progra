@@ -1,0 +1,13 @@
+# ninja log v6
+1	40	1760716864334688533	Labbb1_autogen/timestamp	36329a2ff0df9ba1
+1	40	1760716864334688533	Labbb1_autogen/mocs_compilation.cpp	36329a2ff0df9ba1
+1	40	1760716864334688533	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/timestamp	36329a2ff0df9ba1
+1	40	1760716864334688533	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/mocs_compilation.cpp	36329a2ff0df9ba1
+41	57	1760716864341066364	CMakeFiles/Labbb1.dir/Labbb1_autogen/mocs_compilation.cpp.o	38fb29e844d6eb41
+41	534	1760716864341213740	CMakeFiles/Labbb1.dir/main.cpp.o	99aeea38d56211d3
+3	23	1760717352951977815	Labbb1_autogen/timestamp	36329a2ff0df9ba1
+3	23	1760717352951977815	Labbb1_autogen/mocs_compilation.cpp	36329a2ff0df9ba1
+3	23	1760717352951977815	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/timestamp	36329a2ff0df9ba1
+3	23	1760717352951977815	/Users/brayanpinel/Documents/Laboratorio1/Labbb1/build/Qt_6_10_0_for_macOS-Debug/Labbb1_autogen/mocs_compilation.cpp	36329a2ff0df9ba1
+23	235	1760717352972284647	CMakeFiles/Labbb1.dir/vehicle.cpp.o	70a3d2cb4e6539eb
+236	270	1760717353184965606	Labbb1	8a21a46c5a439679
