@@ -5,7 +5,6 @@
 #include "Truck.h"
 #include "Drone.h"
 #include "Motorcycle.h"
-#include "IFlyable.h"
 
 int main() {
     std::vector<Vehicle*> fleet;
@@ -15,51 +14,53 @@ int main() {
     fleet.push_back(new Drone("DJI Mini 3"));
     fleet.push_back(new Motorcycle("Yamaha R6"));
 
-    std::cout << "[0h] Initial Status" << std::endl;
-    for (Vehicle* v : fleet) {
-        std::cout << v->status() << std::endl;
-    }
-    std::cout << std::endl;
+    // Simulación de 8 horas reales: 0,1,2,3,4,5,6,7
+    for (int hour = 0; hour <= 7; ++hour) {
 
-    for (int hour = 1; hour <= 8; ++hour) {
+
         for (Vehicle* v : fleet) {
             v->simulateHour();
         }
 
-        if (hour % 2 == 0) {
-            for (Vehicle* v : fleet) {
-                IFlyable* f = dynamic_cast<IFlyable*>(v);
-                if (f) {
-                    f->fly();
-                }
+        // 2️⃣ Encabezado de hora
+        std::cout << "[" << hour << "h]" << std::endl;
+
+        // 3️⃣ Imprimir estado pero con vuelo debajo del Drone
+        for (Vehicle* v : fleet) {
+            std::string typeStatus = v->status();
+            std::cout << typeStatus << std::endl;
+
+
+            Drone* dronePtr = dynamic_cast<Drone*>(v);
+            if (dronePtr && (hour == 2 || hour == 4 || hour == 6)) {
+                std::cout << "Attempting flight for flyable vehicles..." << std::endl;
+                dronePtr->fly(); // imprime "<name> flew for 5 minutes."
             }
         }
 
-        if (hour % 3 == 0) {
-            std::cout << "[" << hour << "h] Refueling all vehicles (+15)" << std::endl;
+        // 4️⃣ Refuel SOLO en 3h y 6h
+        if (hour == 3 || hour == 6) {
+            std::cout << "Refueling all vehicles (+15)" << std::endl;
             for (Vehicle* v : fleet) {
                 v->refuel(15);
             }
         }
 
-        std::cout << "[" << hour << "h]" << std::endl;
-        for (Vehicle* v : fleet) {
-            std::cout << v->status() << std::endl;
-        }
         std::cout << std::endl;
     }
 
-    // 🔹 Final summary
+    // 5️⃣ Final summary
     std::cout << "========== FINAL SUMMARY ==========" << std::endl;
     for (Vehicle* v : fleet) {
         std::cout << v->status() << std::endl;
     }
     std::cout << "===================================" << std::endl;
 
+    // 6️⃣ Liberar memoria
     for (Vehicle* v : fleet) {
         delete v;
     }
-
     fleet.clear();
+
     return 0;
 }
