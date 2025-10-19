@@ -13,7 +13,7 @@ public:
     std::string status() const override;
     void simulateHour() override;
 
-    // IFlyable
+
     void fly(int minutes = 5) override;
 };
 

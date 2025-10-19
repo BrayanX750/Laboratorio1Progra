@@ -14,7 +14,7 @@ int main() {
     fleet.push_back(new Drone("DJI Mini 3"));
     fleet.push_back(new Motorcycle("Yamaha R6"));
 
-    // Simulación de 8 horas reales: 0,1,2,3,4,5,6,7
+
     for (int hour = 0; hour <= 7; ++hour) {
 
 
@@ -22,10 +22,10 @@ int main() {
             v->simulateHour();
         }
 
-        // 2️⃣ Encabezado de hora
+
         std::cout << "[" << hour << "h]" << std::endl;
 
-        // 3️⃣ Imprimir estado pero con vuelo debajo del Drone
+
         for (Vehicle* v : fleet) {
             std::string typeStatus = v->status();
             std::cout << typeStatus << std::endl;
@@ -34,11 +34,11 @@ int main() {
             Drone* dronePtr = dynamic_cast<Drone*>(v);
             if (dronePtr && (hour == 2 || hour == 4 || hour == 6)) {
                 std::cout << "Attempting flight for flyable vehicles..." << std::endl;
-                dronePtr->fly(); // imprime "<name> flew for 5 minutes."
+                dronePtr->fly();
             }
         }
 
-        // 4️⃣ Refuel SOLO en 3h y 6h
+
         if (hour == 3 || hour == 6) {
             std::cout << "Refueling all vehicles (+15)" << std::endl;
             for (Vehicle* v : fleet) {
@@ -49,14 +49,21 @@ int main() {
         std::cout << std::endl;
     }
 
-    // 5️⃣ Final summary
-    std::cout << "========== FINAL SUMMARY ==========" << std::endl;
-    for (Vehicle* v : fleet) {
-        std::cout << v->status() << std::endl;
-    }
-    std::cout << "===================================" << std::endl;
 
-    // 6️⃣ Liberar memoria
+    std::cout << "FINAL SUMMARY: " << std::endl;
+    for (Vehicle* v : fleet) {
+        Drone* dronePtr = dynamic_cast<Drone*>(v);
+        if (dronePtr) {
+            std::cout << "- " << v->getName() << " -> Battery: "
+                      << v->getFuelLevel() << std::endl;
+        } else {
+            std::cout << "- " << v->getName() << " -> Fuel Level: "
+                      << v->getFuelLevel() << std::endl;
+        }
+    }
+
+
+
     for (Vehicle* v : fleet) {
         delete v;
     }
